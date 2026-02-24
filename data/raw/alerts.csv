@@ -1,0 +1,56 @@
+alert_id,date_generated,alert_type,severity,product_id,partner_id,metric_name,metric_value,threshold,recommended_action,revenue_impact,status
+ALT-252F04D2,2025-09-15 05:00:00,Excess Inventory,Warning,AW-ULTRA-2-49,PARTNER-004,weeks_of_supply,4.01,8.0,Reduce next week order by 225 units; consider sell-through promo,65455.67,Resolved
+ALT-3E8D4843,2025-09-15 05:00:00,Demand Drop,Critical,IPAD-10-64,PARTNER-003,demand_vs_avg,0.84,0.7,Engage Account Manager — verify with Fnac FR within 48hrs,287999.94,Resolved
+ALT-835FEF48,2025-09-15 05:00:00,Delivery Delay,Critical,IPHONE-16-256,PARTNER-005,on_time_delivery,0.56,0.85,Escalate to logistics team — re-route 186 units,289821.62,Resolved
+ALT-412FD024,2025-09-14 17:00:00,Demand Drop,Critical,AW-S10-42-AL,PARTNER-013,demand_vs_avg,0.83,0.7,Engage Account Manager — verify with Harvey Norman IE within 48hrs,138798.04,In Progress
+ALT-27DD5AAD,2025-09-14 15:00:00,Excess Inventory,Warning,IPAD-PRO-M4-13-256,PARTNER-012,weeks_of_supply,7.19,8.0,Reduce next week order by 82 units; consider sell-through promo,122903.54,In Progress
+ALT-E9EBF411,2025-09-14 13:00:00,Demand Spike,Info,ACC-LIGHTNING-USBC,PARTNER-006,demand_vs_avg,1.72,1.25,Pre-position additional 427 units to capture demand upside,465299.05,Resolved
+ALT-2F431C83,2025-09-14 12:00:00,Delivery Delay,Critical,IPHONE-16-PRO-MAX-1TB,PARTNER-009,on_time_delivery,0.55,0.85,Escalate to logistics team — re-route 105 units,381370.58,Resolved
+ALT-08EB090A,2025-09-14 11:00:00,Excess Inventory,Warning,IPAD-AIR-M3-13-256,PARTNER-009,weeks_of_supply,6.87,8.0,Reduce next week order by 392 units; consider sell-through promo,111184.33,Open
+ALT-CURRYS-001,2025-09-14 07:15:00,Low Stock,Critical,IPHONE-16-PRO-256,PARTNER-002,weeks_of_supply,1.8,2.0,"Increase allocation by 2,400 units (€2.4M) to Currys UK immediately — spring promo window closes W14.",890000.0,Open
+ALT-C4067720,2025-09-14 05:00:00,Demand Drop,Critical,IPAD-AIR-M3-13-256,PARTNER-008,demand_vs_avg,0.82,0.7,Engage Account Manager — verify with Coolblue NL within 48hrs,186886.88,Open
+ALT-36EF82A3,2025-09-13 23:00:00,Low Stock,Warning,ACC-MCASE-16-SILICON,PARTNER-006,weeks_of_supply,1.75,3.0,Monitor closely — request expedited shipment from supply chain,203735.3,Open
+ALT-0D0364BC,2025-09-13 20:00:00,Low Stock,Critical,AW-S10-42-AL,PARTNER-003,weeks_of_supply,0.88,2.0,Increase allocation by 183 units to Fnac FR,852948.86,Open
+ALT-6132D493,2025-09-13 19:00:00,Excess Inventory,Warning,AW-S10-42-AL,PARTNER-012,weeks_of_supply,5.9,8.0,Reduce next week order by 199 units; consider sell-through promo,73324.1,Open
+ALT-DAC808F7,2025-09-13 18:00:00,NPI Underperformance,Warning,IPAD-10-64,PARTNER-009,velocity_vs_plan,0.42,0.8,Escalate to RM — review marketing execution with partner,247155.17,Resolved
+ALT-5F007BFE,2025-09-13 18:00:00,Low Stock,Warning,IPAD-PRO-M4-11-256,PARTNER-012,weeks_of_supply,1.65,3.0,Monitor closely — request expedited shipment from supply chain,163155.45,Open
+ALT-EB61C1D2,2025-09-13 17:00:00,Excess Inventory,Warning,IPHONE-16-PRO-MAX-1TB,PARTNER-004,weeks_of_supply,6.58,8.0,Reduce next week order by 413 units; consider sell-through promo,129865.79,Open
+ALT-67AB13A6,2025-09-13 15:00:00,Low Stock,Critical,AW-S10-42-AL,PARTNER-007,weeks_of_supply,1.03,2.0,Increase allocation by 302 units to Saturn DE,338028.81,In Progress
+ALT-9973B824,2025-09-13 12:00:00,NPI Underperformance,Warning,AW-S10-46-AL,PARTNER-003,velocity_vs_plan,0.37,0.8,Escalate to RM — review marketing execution with partner,93797.74,Resolved
+ALT-7FFB69B2,2025-09-13 11:00:00,NPI Underperformance,Warning,IPHONE-16-PRO-MAX-256,PARTNER-006,velocity_vs_plan,0.68,0.8,Escalate to RM — review marketing execution with partner,193903.62,In Progress
+ALT-FA2660E8,2025-09-13 10:00:00,Delivery Delay,Critical,MBP-14-M4PRO-24GB,PARTNER-012,on_time_delivery,0.4,0.85,Escalate to logistics team — re-route 142 units,405765.46,Resolved
+ALT-85C80877,2025-09-13 10:00:00,Low Stock,Critical,IPAD-AIR-M3-13-256,PARTNER-002,weeks_of_supply,0.84,2.0,Increase allocation by 132 units to Currys UK,875929.84,Open
+ALT-HNI-001,2025-09-13 10:00:00,Low Stock,Warning,IPAD-AIR-M3-11-128,PARTNER-013,in_stock_rate,0.72,0.9,Harvey Norman IE: Ranging gap on iPad Air — allocate minimum 300 units to restore in-stock rate to >90%.,180000.0,Open
+ALT-EB0BA85D,2025-09-13 10:00:00,Demand Spike,Info,AIRPODS-PRO-2,PARTNER-012,demand_vs_avg,1.74,1.25,Pre-position additional 294 units to capture demand upside,345824.01,Open
+ALT-8C603A55,2025-09-13 07:00:00,Demand Spike,Info,ACC-MCASE-16PRO-FINE,PARTNER-008,demand_vs_avg,1.76,1.25,Pre-position additional 491 units to capture demand upside,408374.15,Open
+ALT-669EE440,2025-09-13 07:00:00,Low Stock,Warning,IPHONE-16-PRO-128,PARTNER-008,weeks_of_supply,2.3,3.0,Monitor closely — request expedited shipment from supply chain,69872.0,Open
+ALT-9A419A08,2025-09-13 06:00:00,Demand Spike,Info,ACC-MSTAND,PARTNER-013,demand_vs_avg,1.51,1.25,Pre-position additional 390 units to capture demand upside,363200.76,Open
+ALT-71238081,2025-09-13 06:00:00,Demand Drop,Critical,MBA-M3-16GB-512,PARTNER-005,demand_vs_avg,0.93,0.7,Engage Account Manager — verify with El Corte Inglés ES within 48hrs,332941.79,Open
+ALT-9AC4D902,2025-09-13 05:00:00,Low Stock,Critical,IPHONE-16-PRO-MAX-256,PARTNER-009,weeks_of_supply,1.86,2.0,Increase allocation by 307 units to Expert SE,574844.69,Resolved
+ALT-DD655CA2,2025-09-13 04:00:00,Excess Inventory,Warning,MBP-14-M4PRO-24GB,PARTNER-005,weeks_of_supply,3.8,8.0,Reduce next week order by 100 units; consider sell-through promo,48005.14,Open
+ALT-505BB210,2025-09-13 02:00:00,Demand Spike,Info,MBP-14-M4-16GB,PARTNER-012,demand_vs_avg,1.82,1.25,Pre-position additional 495 units to capture demand upside,136462.13,Resolved
+ALT-204F1B4A,2025-09-13 00:00:00,Demand Spike,Info,AW-SE-40-AL,PARTNER-001,demand_vs_avg,1.74,1.25,Pre-position additional 306 units to capture demand upside,436102.4,Open
+ALT-D0EFCF9B,2025-09-12 23:00:00,Delivery Delay,Critical,ACC-MCASE-16PRO-CLEAR,PARTNER-003,on_time_delivery,0.72,0.85,Escalate to logistics team — re-route 102 units,565106.72,In Progress
+ALT-42A09C8B,2025-09-12 22:00:00,NPI Underperformance,Warning,IPAD-10-64,PARTNER-001,velocity_vs_plan,0.4,0.8,Escalate to RM — review marketing execution with partner,124898.42,Resolved
+ALT-9B2FB831,2025-09-12 20:00:00,Low Stock,Warning,AW-S10-42-AL,PARTNER-013,weeks_of_supply,2.5,3.0,Monitor closely — request expedited shipment from supply chain,73403.71,In Progress
+ALT-5189844C,2025-09-12 16:00:00,Delivery Delay,Critical,AIRPODS-4,PARTNER-013,on_time_delivery,0.74,0.85,Escalate to logistics team — re-route 307 units,599978.78,Resolved
+ALT-81484D2B,2025-09-12 16:00:00,NPI Underperformance,Warning,MBP-14-M4-16GB,PARTNER-006,velocity_vs_plan,0.36,0.8,Escalate to RM — review marketing execution with partner,92743.42,Open
+ALT-2370B273,2025-09-12 14:00:00,Low Stock,Critical,IPHONE-15-256,PARTNER-001,weeks_of_supply,1.4,2.0,Increase allocation by 366 units to MediaMarkt DE,542762.66,Open
+ALT-F284CDE4,2025-09-12 14:00:00,Excess Inventory,Warning,IPAD-PRO-M4-13-256,PARTNER-010,weeks_of_supply,3.77,8.0,Reduce next week order by 70 units; consider sell-through promo,76692.35,Open
+ALT-23909C2A,2025-09-12 14:00:00,Low Stock,Critical,AIRPODS-MAX-USB-C,PARTNER-013,weeks_of_supply,1.72,2.0,Increase allocation by 316 units to Harvey Norman IE,476920.82,In Progress
+ALT-D3ECED1E,2025-09-12 13:00:00,Delivery Delay,Critical,MBA-M3-8GB-256,PARTNER-010,on_time_delivery,0.45,0.85,Escalate to logistics team — re-route 234 units,434118.89,In Progress
+ALT-87EC915D,2025-09-12 11:00:00,Low Stock,Warning,ACC-MCASE-16PRO-FINE,PARTNER-005,weeks_of_supply,2.05,3.0,Monitor closely — request expedited shipment from supply chain,58491.33,In Progress
+ALT-5B9B0014,2025-09-12 10:00:00,Demand Drop,Critical,IPAD-PRO-M4-11-256,PARTNER-013,demand_vs_avg,0.85,0.7,Engage Account Manager — verify with Harvey Norman IE within 48hrs,284354.0,Open
+ALT-F878C6CF,2025-09-12 10:00:00,Low Stock,Warning,AIRPODS-PRO-2,PARTNER-012,weeks_of_supply,1.37,3.0,Monitor closely — request expedited shipment from supply chain,54556.17,Open
+ALT-FNAC-001,2025-09-12 08:30:00,NPI Underperformance,Critical,IPHONE-16-PRO-256,PARTNER-003,velocity_vs_plan,0.77,0.9,Escalate to Fnac FR Account Manager — joint marketing intervention required. Delayed campaign execution identified.,420000.0,Open
+ALT-79944CDD,2025-09-12 08:00:00,NPI Underperformance,Warning,IPAD-PRO-M4-11-256,PARTNER-010,velocity_vs_plan,0.43,0.8,Escalate to RM — review marketing execution with partner,152512.53,Open
+ALT-1BBBA56A,2025-09-12 03:00:00,Demand Drop,Critical,MBP-16-M4PRO-24GB,PARTNER-005,demand_vs_avg,0.89,0.7,Engage Account Manager — verify with El Corte Inglés ES within 48hrs,296003.8,In Progress
+ALT-234D4F38,2025-09-12 02:00:00,Low Stock,Warning,IPHONE-16-PLUS-128,PARTNER-012,weeks_of_supply,1.91,3.0,Monitor closely — request expedited shipment from supply chain,145170.63,Open
+ALT-2734CD33,2025-09-11 23:00:00,NPI Underperformance,Warning,IPHONE-16-PLUS-128,PARTNER-003,velocity_vs_plan,0.6,0.8,Escalate to RM — review marketing execution with partner,113415.15,Open
+ALT-0A5CBC24,2025-09-11 22:00:00,Demand Spike,Info,IPHONE-16-PRO-MAX-256,PARTNER-011,demand_vs_avg,1.5,1.25,Pre-position additional 73 units to capture demand upside,342187.26,Resolved
+ALT-458DDD9B,2025-09-11 20:00:00,Low Stock,Critical,ACC-LIGHTNING-USBC,PARTNER-013,weeks_of_supply,1.33,2.0,Increase allocation by 176 units to Harvey Norman IE,672379.21,Open
+ALT-42D5AF2F,2025-09-11 18:00:00,Excess Inventory,Warning,ACC-MCASE-16PRO-CLEAR,PARTNER-007,weeks_of_supply,7.28,8.0,Reduce next week order by 428 units; consider sell-through promo,65606.86,Open
+ALT-9485A21E,2025-09-11 17:00:00,Low Stock,Warning,IPAD-10-64,PARTNER-009,weeks_of_supply,2.43,3.0,Monitor closely — request expedited shipment from supply chain,128110.46,In Progress
+ALT-201F5B65,2025-09-11 15:00:00,Delivery Delay,Critical,IPAD-AIR-M3-13-256,PARTNER-011,on_time_delivery,0.58,0.85,Escalate to logistics team — re-route 178 units,251336.75,Open
+ALT-CA649D80,2025-09-11 12:00:00,Low Stock,Critical,IPAD-PRO-M4-11-256,PARTNER-009,weeks_of_supply,1.49,2.0,Increase allocation by 401 units to Expert SE,423448.66,Open
+ALT-6F247E9B,2025-09-11 11:00:00,Demand Drop,Critical,IPHONE-15-PRO-128,PARTNER-009,demand_vs_avg,0.85,0.7,Engage Account Manager — verify with Expert SE within 48hrs,366223.16,Resolved

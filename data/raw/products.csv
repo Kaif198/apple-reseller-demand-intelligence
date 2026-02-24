@@ -1,0 +1,41 @@
+product_id,product_name,product_family,product_category,launch_date,is_npi,asp,lifecycle_stage,priority_tier
+IPHONE-16-PRO-MAX-256,iPhone 16 Pro Max 256GB,iPhone,iPhone Pro Max,2025-09-01,True,1299,Launch,Tier 1
+IPHONE-16-PRO-MAX-512,iPhone 16 Pro Max 512GB,iPhone,iPhone Pro Max,2025-09-01,True,1499,Launch,Tier 1
+IPHONE-16-PRO-MAX-1TB,iPhone 16 Pro Max 1TB,iPhone,iPhone Pro Max,2025-09-01,True,1749,Launch,Tier 1
+IPHONE-16-PRO-128,iPhone 16 Pro 128GB,iPhone,iPhone Pro,2025-09-01,True,1099,Launch,Tier 1
+IPHONE-16-PRO-256,iPhone 16 Pro 256GB,iPhone,iPhone Pro,2025-09-01,True,1199,Launch,Tier 1
+IPHONE-16-PRO-512,iPhone 16 Pro 512GB,iPhone,iPhone Pro,2025-09-01,True,1399,Launch,Tier 1
+IPHONE-16-128,iPhone 16 128GB,iPhone,iPhone,2025-09-01,True,929,Launch,Tier 1
+IPHONE-16-256,iPhone 16 256GB,iPhone,iPhone,2025-09-01,True,1029,Launch,Tier 1
+IPHONE-16-PLUS-128,iPhone 16 Plus 128GB,iPhone,iPhone Plus,2025-09-01,True,1079,Launch,Tier 1
+IPHONE-16-PLUS-256,iPhone 16 Plus 256GB,iPhone,iPhone Plus,2025-09-01,True,1179,Launch,Tier 1
+IPHONE-15-PRO-128,iPhone 15 Pro 128GB,iPhone,iPhone Pro,2024-09-15,False,849,Maturity,Tier 1
+IPHONE-15-PRO-256,iPhone 15 Pro 256GB,iPhone,iPhone Pro,2024-09-15,False,949,Maturity,Tier 1
+IPHONE-15-128,iPhone 15 128GB,iPhone,iPhone,2024-09-15,False,729,Decline,Tier 1
+IPHONE-15-256,iPhone 15 256GB,iPhone,iPhone,2024-09-15,False,829,Decline,Tier 1
+IPAD-AIR-M3-11-128,"iPad Air 11"" M3 128GB WiFi",iPad,iPad Air,2025-03-01,False,699,Growth,Tier 2
+IPAD-AIR-M3-13-256,"iPad Air 13"" M3 256GB WiFi",iPad,iPad Air,2025-03-01,False,999,Growth,Tier 2
+IPAD-PRO-M4-11-256,"iPad Pro 11"" M4 256GB WiFi",iPad,iPad Pro,2024-05-15,False,1099,Maturity,Tier 2
+IPAD-PRO-M4-13-256,"iPad Pro 13"" M4 256GB WiFi",iPad,iPad Pro,2024-05-15,False,1399,Maturity,Tier 2
+IPAD-10-64,iPad 10th Gen 64GB WiFi,iPad,iPad,2023-10-01,False,449,Decline,Tier 2
+IPAD-MINI-7-128,iPad mini 7 128GB WiFi,iPad,iPad mini,2024-10-01,False,599,Maturity,Tier 2
+MBP-14-M4-16GB,"MacBook Pro 14"" M4 16GB",Mac,MacBook Pro,2024-11-01,False,2399,Growth,Tier 2
+MBP-14-M4PRO-24GB,"MacBook Pro 14"" M4 Pro 24GB",Mac,MacBook Pro,2024-11-01,False,2999,Growth,Tier 2
+MBP-16-M4PRO-24GB,"MacBook Pro 16"" M4 Pro 24GB",Mac,MacBook Pro,2024-11-01,False,3499,Growth,Tier 2
+MBA-M3-8GB-256,"MacBook Air 13"" M3 8GB",Mac,MacBook Air,2024-03-01,False,1299,Maturity,Tier 2
+MBA-M3-16GB-512,"MacBook Air 13"" M3 16GB",Mac,MacBook Air,2024-03-01,False,1699,Maturity,Tier 2
+AW-ULTRA-2-49,Apple Watch Ultra 2 49mm,Apple Watch,Watch Ultra,2024-09-15,False,899,Maturity,Tier 2
+AW-S10-42-AL,Apple Watch Series 10 42mm Aluminium,Apple Watch,Watch Series,2024-09-15,False,449,Maturity,Tier 2
+AW-S10-46-AL,Apple Watch Series 10 46mm Aluminium,Apple Watch,Watch Series,2024-09-15,False,479,Maturity,Tier 2
+AW-SE-40-AL,Apple Watch SE 40mm Aluminium,Apple Watch,Watch SE,2024-09-15,False,279,Maturity,Tier 2
+AW-SE-44-AL,Apple Watch SE 44mm Aluminium,Apple Watch,Watch SE,2024-09-15,False,299,Maturity,Tier 2
+AIRPODS-4-ANC,AirPods 4 with ANC,AirPods,AirPods,2024-09-15,False,179,Growth,Tier 2
+AIRPODS-4,AirPods 4,AirPods,AirPods,2024-09-15,False,149,Growth,Tier 2
+AIRPODS-PRO-2,AirPods Pro 2nd Gen,AirPods,AirPods Pro,2023-09-15,False,279,Maturity,Tier 2
+AIRPODS-MAX-USB-C,AirPods Max USB-C,AirPods,AirPods Max,2024-09-15,False,549,Growth,Tier 2
+ACC-MCASE-16PRO-CLEAR,iPhone 16 Pro Clear Case,Accessories,Cases,2025-09-01,True,59,Launch,Tier 3
+ACC-MCASE-16-SILICON,iPhone 16 Silicone Case,Accessories,Cases,2025-09-01,True,59,Launch,Tier 3
+ACC-MCASE-16PRO-FINE,iPhone 16 Pro FineWoven Case,Accessories,Cases,2025-09-01,True,79,Launch,Tier 3
+ACC-MSTAND,MagSafe Duo Charger,Accessories,Chargers,2021-11-01,False,149,Maturity,Tier 3
+ACC-APPLECARE-IPHONE,AppleCare+ for iPhone 16,Accessories,AppleCare,2025-09-01,True,199,Launch,Tier 3
+ACC-LIGHTNING-USBC,USB-C to MagSafe 3 Cable,Accessories,Cables,2023-06-01,False,49,Maturity,Tier 3

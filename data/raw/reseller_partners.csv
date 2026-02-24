@@ -1,0 +1,14 @@
+partner_id,partner_name,country,region,partner_tier,avg_monthly_revenue,store_count,digital_maturity_score
+PARTNER-001,MediaMarkt DE,DE,DACH,Platinum,28500000.0,417,9
+PARTNER-002,Currys UK,GB,UK&I,Platinum,22100000.0,305,8
+PARTNER-003,Fnac FR,FR,France,Gold,11400000.0,102,7
+PARTNER-004,Euronics IT,IT,South EU,Gold,8900000.0,258,6
+PARTNER-005,El Corte Inglés ES,ES,South EU,Gold,7200000.0,88,6
+PARTNER-006,Elkjøp NO,NO,Nordic,Gold,6800000.0,197,7
+PARTNER-007,Saturn DE,DE,DACH,Gold,10300000.0,158,8
+PARTNER-008,Coolblue NL,NL,Benelux,Gold,5500000.0,24,10
+PARTNER-009,Expert SE,SE,Nordic,Silver,3100000.0,152,6
+PARTNER-010,Darty FR,FR,France,Silver,3800000.0,213,5
+PARTNER-011,Power DK,DK,Nordic,Silver,2400000.0,54,6
+PARTNER-012,Komplett NO,NO,Nordic,Silver,1800000.0,0,10
+PARTNER-013,Harvey Norman IE,IE,UK&I,Silver,1400000.0,33,5
