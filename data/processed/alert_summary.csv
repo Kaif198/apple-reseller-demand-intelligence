@@ -1,0 +1,9 @@
+severity,alert_type,count,total_revenue_impact,open_count
+Critical,Delivery Delay,7,2927498.8,1
+Critical,Demand Drop,7,1893207.6099999999,3
+Critical,Low Stock,9,5647263.55,6
+Critical,NPI Underperformance,1,420000.0,1
+Info,Demand Spike,7,2497449.7600000002,4
+Warning,Excess Inventory,8,693037.78,6
+Warning,Low Stock,9,1076495.05,6
+Warning,NPI Underperformance,7,1018426.05,3

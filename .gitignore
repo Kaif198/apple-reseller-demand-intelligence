@@ -21,7 +21,6 @@ ENV/
 
 # Data (raw CSVs are generated, not committed)
 data/raw/
-data/processed/
 
 # OS
 .DS_Store
