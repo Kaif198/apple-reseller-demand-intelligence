@@ -113,25 +113,6 @@ div {
     background-color: var(--apple-bg-tertiary) !important;
 }
 
-@keyframes fadeInRoute {
-    from {
-        opacity: 0;
-        transform: translateY(6px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.main .block-container,
-[data-testid="stAppViewContainer"]>section,
-[data-testid="stAppViewBlockContainer"],
-[data-testid="stVerticalBlock"]>div {
-    animation: fadeInRoute 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
-}
-
 .main .block-container,
 [data-testid="stAppViewContainer"]>section {
     padding: 2.5rem 3rem 3rem 3rem !important;
@@ -152,13 +133,24 @@ div {
     padding-right: 1.5rem !important;
 }
 
-/* Force dark text on sidebar links in Streamlit Cloud */
+/* Force dark text and fix clipping on sidebar links in Streamlit Cloud */
+[data-testid="stSidebar"] [data-testid="stPageLink"] {
+    line-height: 1.6 !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    overflow: visible !important;
+}
+
 [data-testid="stSidebar"] [data-testid="stPageLink"] p,
 [data-testid="stSidebar"] [data-testid="stPageLink"] span,
 [data-testid="stSidebar"] [data-testid="stPageLink"] a {
     color: var(--apple-text-primary) !important;
     font-family: var(--apple-font) !important;
     font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 [data-testid="stSidebar"] [data-testid="stPageLink"]:hover p,
