@@ -126,10 +126,16 @@ div {
 }
 
 .main .block-container,
+[data-testid="stAppViewContainer"]>section,
+[data-testid="stAppViewBlockContainer"],
+[data-testid="stVerticalBlock"]>div {
+    animation: fadeInRoute 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
+}
+
+.main .block-container,
 [data-testid="stAppViewContainer"]>section {
     padding: 2.5rem 3rem 3rem 3rem !important;
     max-width: 1400px !important;
-    animation: fadeInRoute 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
 }
 
 /* ---------- SIDEBAR ---------- */
@@ -144,6 +150,20 @@ div {
     padding-top: 2rem !important;
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+}
+
+/* Force dark text on sidebar links in Streamlit Cloud */
+[data-testid="stSidebar"] [data-testid="stPageLink"] p,
+[data-testid="stSidebar"] [data-testid="stPageLink"] span,
+[data-testid="stSidebar"] [data-testid="stPageLink"] a {
+    color: var(--apple-text-primary) !important;
+    font-family: var(--apple-font) !important;
+    font-weight: 500 !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stPageLink"]:hover p,
+[data-testid="stSidebar"] [data-testid="stPageLink"]:hover span {
+    color: var(--apple-blue) !important;
 }
 
 /* ---------- TYPOGRAPHY ---------- */
