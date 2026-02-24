@@ -1,0 +1,35 @@
+# Apple Reseller Channel — Demand Planning & Inventory Intelligence Platform
+# Requirements
+
+# Core data stack
+numpy==1.26.4
+pandas==2.2.1
+scipy==1.13.0
+scikit-learn==1.4.1.post1
+
+# Data generation
+Faker==24.2.0
+
+# Forecasting
+statsmodels==0.14.1
+prophet==1.1.5
+
+# Optimisation
+pulp==2.8.0
+
+# Visualisation
+plotly==5.22.0
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# Streamlit dashboard
+streamlit==1.32.2
+
+# Notebook support
+jupyterlab==4.1.5
+nbformat==5.10.3
+ipykernel==6.29.4
+
+# Utilities
+openpyxl==3.1.2
+pyarrow==16.0.0
