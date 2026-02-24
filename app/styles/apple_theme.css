@@ -3,6 +3,9 @@
    "Designed by Apple in California"
    ========================================================================== */
 
+/* ---------- IMPORTS ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* ---------- CSS VARIABLES ---------- */
 :root {
     --apple-bg-primary: #FFFFFF;
@@ -27,9 +30,9 @@
     --apple-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
     --apple-card-shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.10);
     --apple-card-radius: 16px;
-    --apple-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display',
-        'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    --apple-transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --apple-font: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display",
+        "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    --apple-transition: all 0.25s ease-out;
 }
 
 /* ---------- STREAMLIT OVERRIDES (NUCLEAR) ---------- */

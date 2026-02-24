@@ -12,6 +12,11 @@ import numpy as np
 
 st.set_page_config(page_title="Risk & Alerts · Apple Demand Planner",
                    page_icon="", layout="wide")
+st.write(
+    '<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");</style>',
+    unsafe_allow_html=True
+)
+
 css_path = os.path.join(os.path.dirname(__file__), "..", "styles", "apple_theme.css")
 with open(css_path) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)

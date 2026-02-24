@@ -20,17 +20,14 @@ st.set_page_config(
 )
 
 # ─── Apply Apple CSS Theme and Fonts ──────────────────────────────────────────
+st.write(
+    '<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");</style>',
+    unsafe_allow_html=True
+)
+
 css_path = os.path.join(os.path.dirname(__file__), "styles", "apple_theme.css")
 with open(css_path) as f:
-    st.markdown(
-        f"""
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <style>
-            {f.read()}
-        </style>
-        """, 
-        unsafe_allow_html=True
-    )
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # ─── Imports (after sys.path) ─────────────────────────────────────────────────
 from src.utils.helpers import (
