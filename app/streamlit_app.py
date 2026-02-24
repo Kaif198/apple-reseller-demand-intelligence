@@ -19,10 +19,18 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── Apply Apple CSS Theme ────────────────────────────────────────────────────
+# ─── Apply Apple CSS Theme and Fonts ──────────────────────────────────────────
 css_path = os.path.join(os.path.dirname(__file__), "styles", "apple_theme.css")
 with open(css_path) as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    st.markdown(
+        f"""
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            {f.read()}
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
 
 # ─── Imports (after sys.path) ─────────────────────────────────────────────────
 from src.utils.helpers import (

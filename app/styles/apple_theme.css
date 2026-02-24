@@ -3,9 +3,6 @@
    "Designed by Apple in California"
    ========================================================================== */
 
-/* ---------- IMPORTS ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* ---------- CSS VARIABLES ---------- */
 :root {
     --apple-bg-primary: #FFFFFF;
