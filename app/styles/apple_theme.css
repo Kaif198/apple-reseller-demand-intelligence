@@ -4,7 +4,45 @@
    ========================================================================== */
 
 /* ---------- IMPORTS ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
 
 /* ---------- CSS VARIABLES ---------- */
 :root {
@@ -53,12 +91,26 @@ header,
 
 .stApp,
 [data-testid="stAppViewContainer"],
-.main .block-container {
+.main .block-container,
+.stMarkdown,
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+div {
     font-family: var(--apple-font) !important;
-    background-color: var(--apple-bg-tertiary) !important;
+}
+
+.stApp {
     color: var(--apple-text-primary) !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: var(--apple-bg-tertiary) !important;
 }
 
 @keyframes fadeInRoute {
@@ -73,10 +125,11 @@ header,
     }
 }
 
-.main .block-container {
+.main .block-container,
+[data-testid="stAppViewContainer"]>section {
     padding: 2.5rem 3rem 3rem 3rem !important;
     max-width: 1400px !important;
-    animation: fadeInRoute 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
+    animation: fadeInRoute 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
 }
 
 /* ---------- SIDEBAR ---------- */
