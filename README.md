@@ -174,7 +174,7 @@ apple-demand-planner/
 
 **Mohammed Kaif Ahmed**  
 MSc Strategy & Innovation Management, DCU Business School  
-[LinkedIn](https://linkedin.com/in/mohammed-kaif-ahmed) · [GitHub](https://github.com/MohammedKaifAhmed)
+[LinkedIn](www.linkedin.com/in/kaif-ahmed-bb972421a) · [GitHub](https://github.com/Kaif198)
 
 *Built as a portfolio demonstration for the Apple Demand Planner role, EMEA Reseller Operations, Cork.*
 
