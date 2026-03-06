@@ -32,7 +32,7 @@ def _load():
 try:
     products, partners, actuals, alerts = _load()
 except FileNotFoundError:
-    st.error("⚠️  Run `python src/data_generator.py` first."); st.stop()
+    st.error("Run `python src/data_generator.py` first."); st.stop()
 
 with st.sidebar:
     render_sidebar()
@@ -48,12 +48,15 @@ kpis = get_alert_kpis(alerts)
 render_kpi_row([
     {"label": "Open Alerts",    "value": str(kpis["total_open"]),
      "context": "Require action"},
-    {"label": "🔴 Critical",   "value": str(kpis["critical"]),
-     "context": "Immediate action required", "delta_good_direction": "negative"},
-    {"label": "🟡 Warning",    "value": str(kpis["warning"]),
-     "context": "Monitor and plan response"},
-    {"label": "ℹ️  Info",      "value": str(kpis["info"]),
-     "context": "Awareness items"},
+    {"label": '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#FF3B30;margin-right:6px;vertical-align:middle"></span>Critical',
+      "value": str(kpis["critical"]),
+      "context": "Immediate action required", "delta_good_direction": "negative"},
+    {"label": '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#FF9500;margin-right:6px;vertical-align:middle"></span>Warning',
+      "value": str(kpis["warning"]),
+      "context": "Monitor and plan response"},
+    {"label": '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#0071E3;margin-right:6px;vertical-align:middle"></span>Info',
+      "value": str(kpis["info"]),
+      "context": "Awareness items"},
     {"label": "Revenue at Risk","value": format_eur(kpis["revenue_at_risk"]),
      "context": "If open alerts unaddressed", "delta_good_direction": "negative"},
 ])

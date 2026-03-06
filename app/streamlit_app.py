@@ -55,7 +55,7 @@ def load_data():
 try:
     data = load_data()
 except FileNotFoundError:
-    st.error("⚠️  Data not found. Please run `python src/data_generator.py` first.")
+    st.error("Data not found. Please run `python src/data_generator.py` first.")
     st.stop()
 
 products   = data["products"]
@@ -74,7 +74,7 @@ kpis = calc_channel_kpis(actuals, order_book, alerts, products)
 
 # ─── Page Header ─────────────────────────────────────────────────────────────
 st.markdown('<div class="page-title">Reseller Channel Intelligence</div>', unsafe_allow_html=True)
-st.markdown('<div class="page-subtitle">EMEA Reseller Operations · Week 37, 2025 · <span class="data-freshness">🟢 Data refreshed 2 min ago</span></div>',
+st.markdown('<div class="page-subtitle">EMEA Reseller Operations · Week 37, 2025 · <span class="data-freshness"><span class="meta-dot" style="display:inline-block;vertical-align:middle;margin-right:4px"></span>Data refreshed 2 min ago</span></div>',
             unsafe_allow_html=True)
 
 # ─── KPI Cards Row ────────────────────────────────────────────────────────────

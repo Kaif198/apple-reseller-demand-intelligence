@@ -35,7 +35,7 @@ def _load():
 try:
     products, partners, actuals, forecasts, order_book = _load()
 except FileNotFoundError:
-    st.error("⚠️  Run `python src/data_generator.py` first."); st.stop()
+    st.error("Run `python src/data_generator.py` first."); st.stop()
 
 with st.sidebar:
     render_sidebar()

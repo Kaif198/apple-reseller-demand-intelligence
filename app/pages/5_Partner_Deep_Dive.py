@@ -36,7 +36,7 @@ def _load():
 try:
     products, partners, actuals, forecasts, order_book, npi, alerts = _load()
 except FileNotFoundError:
-    st.error("⚠️  Run `python src/data_generator.py` first."); st.stop()
+    st.error("Run `python src/data_generator.py` first."); st.stop()
 
 with st.sidebar:
     render_sidebar()
@@ -79,7 +79,7 @@ render_kpi_row([
 st.markdown("<div style='margin:16px 0'></div>", unsafe_allow_html=True)
 
 # ─── Tab Navigation ───────────────────────────────────────────────────────────
-tabs = st.tabs(["📊 Overview", "📈 Demand", "📦 Order Book", "🚀 NPI", "⚠️ Alerts"])
+tabs = st.tabs(["Overview", "Demand", "Order Book", "NPI", "Alerts"])
 
 # ═══════════ TAB 1: OVERVIEW ═══════════
 with tabs[0]:
@@ -221,6 +221,6 @@ with tabs[4]:
     section_header(f"Open Alerts — {sel_partner}")
     p_alerts = alerts[(alerts["partner_id"] == sel_pid) & (alerts["status"] == "Open")]
     if p_alerts.empty:
-        insight_box(f"✅ No open alerts for {sel_partner} — operations are on track.", icon="")
+        insight_box(f"No open alerts for {sel_partner} — operations are on track.", icon="")
     else:
         render_alert_feed(p_alerts)

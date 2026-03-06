@@ -30,7 +30,7 @@ def _load():
 try:
     products, partners, actuals, forecasts = _load()
 except FileNotFoundError:
-    st.error("⚠️  Run `python src/data_generator.py` first.")
+    st.error("Run `python src/data_generator.py` first.")
     st.stop()
 
 # ─── Sidebar ─────────────────────────────────────────────────────────────────
@@ -125,7 +125,7 @@ model_comparison = pd.DataFrame([
     {"Model": "SARIMA", "WMAPE": 11.5, "MAPE": 12.1, "Bias": -2.3, "Accuracy": "88.5%", "Best For": "Stable, seasonal SKUs"},
     {"Model": "Prophet", "WMAPE": 9.8, "MAPE": 10.2, "Bias": 0.4, "Accuracy": "90.2%", "Best For": "Launch seasons, holidays"},
     {"Model": "Random Forest", "WMAPE": 10.3, "MAPE": 10.8, "Bias": 1.1, "Accuracy": "89.7%", "Best For": "Feature-rich, cross-SKU signals"},
-    {"Model": "Ensemble ✓", "WMAPE": 8.7, "MAPE": 9.1, "Bias": -1.2, "Accuracy": "91.3%", "Best For": "Portfolio-level; default for planning"},
+    {"Model": "Ensemble (Active)", "WMAPE": 8.7, "MAPE": 9.1, "Bias": -1.2, "Accuracy": "91.3%", "Best For": "Portfolio-level; default for planning"},
 ])
 
 table_html = """
@@ -136,7 +136,7 @@ table_html = """
 </tr></thead><tbody>
 """
 for _, row in model_comparison.iterrows():
-    bold = "font-weight:700;" if "✓" in row["Model"] else ""
+    bold = "font-weight:700;" if "Active" in row["Model"] else ""
     table_html += f"""<tr style="{bold}">
 <td>{row['Model']}</td>
 <td>{row['WMAPE']:.1f}%</td>

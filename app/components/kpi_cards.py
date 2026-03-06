@@ -66,7 +66,7 @@ def render_kpi_row(cards: list) -> None:
     st.markdown(f'<div class="kpi-row">{cards_html}</div>', unsafe_allow_html=True)
 
 
-def insight_box(text: str, icon: str = "💡") -> None:
+def insight_box(text: str, icon: str = "") -> None:
     """Render an Apple-style insight callout box."""
     label_html = (
         f'<div class="insight-label"><span>{icon}</span> Key Insight</div>'

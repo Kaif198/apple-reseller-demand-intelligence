@@ -70,7 +70,25 @@
     --apple-card-radius: 16px;
     --apple-font: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display",
         "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-    --apple-transition: all 0.25s ease-out;
+    --apple-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ---------- SMOOTH ANIMATIONS ---------- */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* ---------- STREAMLIT OVERRIDES (NUCLEAR) ---------- */
@@ -117,6 +135,7 @@ div {
 [data-testid="stAppViewContainer"]>section {
     padding: 2.5rem 3rem 3rem 3rem !important;
     max-width: 1400px !important;
+    animation: fadeIn 0.4s ease-out !important;
 }
 
 /* ---------- SIDEBAR ---------- */
@@ -259,6 +278,7 @@ div {
     border-bottom: 1px solid var(--apple-divider-light) !important;
     margin: 28px 0 16px 0 !important;
     display: block !important;
+    animation: fadeIn 0.4s ease-out !important;
 }
 
 /* ---------- KPI CARDS ---------- */
@@ -268,6 +288,7 @@ div {
     gap: 16px !important;
     margin-bottom: 28px !important;
     flex-wrap: wrap !important;
+    animation: fadeInUp 0.5s ease-out both !important;
 }
 
 .kpi-card {
@@ -277,7 +298,8 @@ div {
     box-shadow: var(--apple-card-shadow) !important;
     flex: 1 !important;
     min-width: 180px !important;
-    transition: var(--apple-transition) !important;
+    transition: box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
+                transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94) !important;
     border: 1px solid rgba(0, 0, 0, 0.04) !important;
     position: relative !important;
     overflow: hidden !important;
@@ -379,6 +401,14 @@ div {
     font-size: 15px !important;
     line-height: 1.65 !important;
     color: var(--apple-text-primary) !important;
+    animation: fadeInUp 0.5s ease-out both !important;
+    transition: box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
+                transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94) !important;
+}
+
+.insight-box:hover {
+    box-shadow: var(--apple-card-shadow) !important;
+    transform: translateY(-1px) !important;
 }
 
 .insight-box strong,
@@ -413,11 +443,14 @@ div {
     box-shadow: var(--apple-card-shadow) !important;
     margin-bottom: 20px !important;
     border: 1px solid rgba(0, 0, 0, 0.04) !important;
-    transition: var(--apple-transition) !important;
+    transition: box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
+                transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94) !important;
+    animation: fadeInUp 0.5s ease-out both !important;
 }
 
 .chart-container:hover {
     box-shadow: var(--apple-card-shadow-hover) !important;
+    transform: translateY(-1px) !important;
 }
 
 .chart-title {
@@ -451,8 +484,11 @@ div {
     border-radius: 12px !important;
     padding: 16px 20px !important;
     border: 1px solid rgba(0, 0, 0, 0.05) !important;
-    transition: var(--apple-transition) !important;
+    transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
+                box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
+                opacity 0.3s ease !important;
     border-left: 4px solid var(--apple-grey) !important;
+    animation: fadeInUp 0.4s ease-out both !important;
 }
 
 .alert-card:hover {
@@ -579,6 +615,7 @@ div {
     box-shadow: var(--apple-card-shadow) !important;
     margin: 12px 0 !important;
     border: 1px solid rgba(0, 0, 0, 0.04) !important;
+    animation: fadeInUp 0.5s ease-out both !important;
 }
 
 .apple-table {
@@ -608,6 +645,7 @@ div {
     border-bottom: 1px solid #F2F2F4 !important;
     color: var(--apple-text-primary) !important;
     vertical-align: middle !important;
+    transition: background-color 0.25s ease !important;
 }
 
 .apple-table tbody tr:hover td {
@@ -626,8 +664,10 @@ div {
     padding: 22px 24px !important;
     box-shadow: var(--apple-card-shadow) !important;
     border: 1px solid rgba(0, 0, 0, 0.04) !important;
-    transition: var(--apple-transition) !important;
+    transition: box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
+                transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94) !important;
     margin-bottom: 4px !important;
+    animation: fadeInUp 0.5s ease-out both !important;
 }
 
 .partner-card:hover {
@@ -760,7 +800,8 @@ div {
     color: var(--apple-text-secondary) !important;
     padding: 12px 20px !important;
     background: transparent !important;
-    transition: var(--apple-transition) !important;
+    transition: color 0.3s cubic-bezier(0.25,0.46,0.45,0.94),
+                border-color 0.3s cubic-bezier(0.25,0.46,0.45,0.94) !important;
 }
 
 .stTabs [data-baseweb="tab"]:hover {

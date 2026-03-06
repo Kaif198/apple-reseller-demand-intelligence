@@ -30,7 +30,7 @@ def _load():
 try:
     products, partners, npi = _load()
 except FileNotFoundError:
-    st.error("⚠️  Run `python src/data_generator.py` first."); st.stop()
+    st.error("Run `python src/data_generator.py` first."); st.stop()
 
 with st.sidebar:
     render_sidebar()
@@ -63,12 +63,15 @@ prod_velocity = npi_filt["velocity_vs_plan"].mean() * 100
 render_kpi_row([
     {"label": "Overall NPI Velocity", "value": f"{prod_velocity:.1f}%",
      "context": f"vs launch plan — {sel_npi_name[:25]}"},
-    {"label": "🟢 Green Partners", "value": str(kpis["green_flags"]),
-     "context": "Tracking ≥90% of plan"},
-    {"label": "🟡 Amber Partners", "value": str(kpis["amber_flags"]),
-     "context": "Tracking 70–90% of plan"},
-    {"label": "🔴 Red Partners",   "value": str(kpis["red_flags"]),
-     "context": "Tracking <70% of plan — action required"},
+    {"label": '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#34C759;margin-right:6px;vertical-align:middle"></span>Green Partners',
+      "value": str(kpis["green_flags"]),
+      "context": "Tracking ≥90% of plan"},
+    {"label": '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#FF9500;margin-right:6px;vertical-align:middle"></span>Amber Partners',
+      "value": str(kpis["amber_flags"]),
+      "context": "Tracking 70–90% of plan"},
+    {"label": '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#FF3B30;margin-right:6px;vertical-align:middle"></span>Red Partners',
+      "value": str(kpis["red_flags"]),
+      "context": "Tracking <70% of plan — action required"},
 ])
 st.markdown("<div style='margin:16px 0'></div>", unsafe_allow_html=True)
 

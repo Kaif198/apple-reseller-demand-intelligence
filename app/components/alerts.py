@@ -67,7 +67,7 @@ def render_alert_feed(alerts_df: pd.DataFrame, max_alerts: int = 20) -> None:
 
     if df.empty:
         st.markdown(
-            '<div class="insight-box">✅ No open alerts — channel is operating normally.</div>',
+            '<div class="insight-box">No open alerts — channel is operating normally.</div>',
             unsafe_allow_html=True,
         )
         return
